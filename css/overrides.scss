@@ -1,0 +1,438 @@
+// Bootstrap
+@import "p2pu-css-framework/lib/bootstrap";
+// Bootstrap Responsive
+@import "p2pu-css-framework/lib/responsive";
+// Mixins already created for P2PU
+@import "p2pu-css-framework/p2pu/p2pu-mixins";
+
+// Import new fonts
+@font-face {
+  font-family: '3dumbregular';
+  src: url('fonts/3dumb-webfont.eot');
+  src: url('fonts/3dumb-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/3dumb-webfont.woff') format('woff'), url('fonts/3dumb-webfont.ttf') format('truetype'), url('fonts/3dumb-webfont.svg#3dumbregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: '2dumbregular';
+  src: url('fonts/2dumb-webfont.eot');
+  src: url('fonts/2dumb-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/2dumb-webfont.woff') format('woff'), url('fonts/2dumb-webfont.ttf') format('truetype'), url('fonts/2dumb-webfont.svg#2dumbregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Kite+One);
+@import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
+
+@mixin p2pu-btn($startColor, $endColor, $border) {
+  color: $slate;
+  @include gradient-vertical($startColor: $startColor, $endColor: $endColor);
+  border-color: $startColor $endColor $border;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
+  cursor: pointer !important;
+  font-size: 20px;
+  padding: 7px 20px;
+  margin-top: 1px;
+  @include box-shadow(0 2px 2px rgba(0, 0, 0, 0.35));
+  @include border-radius(5px);
+  border-radius: 5px;
+  font-weight: bold;
+  &:hover {
+    text-decoration: none;
+    @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
+  }
+}
+
+h1, h2,h3, h4, h5{
+  font-family: 'Arvo', serif;
+}
+.p2pu-btn {
+  @include p2pu-btn($startColor: $snow, $endColor: $snow, $border: $silver);
+  //font-weight: bold;
+  &:hover {
+    color: $slate;
+  }
+}
+
+.p2pu-btn-cyan {
+  @include p2pu-btn($startColor: $cyan, $endColor: $cyan, $border: $cyan);
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+
+.p2pu-btn-apricot {
+  @include p2pu-btn($startColor: $apricot, $endColor: $apricot, $border: $apricot);
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.p2pu-btn-clemintine {
+  @include p2pu-btn($startColor: $clemintine, $endColor: $clemintine, $border: $clemintine);
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.p2pu-btn-silver {
+  @include p2pu-btn($startColor: $silver, $endColor: $silver, $border: $silver);
+  color: $slate;
+  &:hover {
+    color: $slate;
+  }
+}
+.text-appricot {
+  color: $apricot;
+}
+
+.text-cyan {
+  color: $cyan;
+}
+
+.p2pu-panel-wrap {
+  background-color: $white;
+  display: none;
+  .panel-contents {
+    @extend .container;
+    .us{
+      float: left;
+      margin-top: 20px;
+    }
+    .connect{
+      @include makeColumn($columns: 4);
+      float: right;
+      li{
+        line-height: 16px;
+      }
+      hr{
+        margin: 10px 0;
+      }
+      a{
+        font-size: 1.2em;
+        &:hover{
+          text-decoration: none;
+        }
+      }
+    }
+    .supporters{
+      margin-right: 20px;
+      @include makeColumn($columns: 6);
+      float: right;
+      h4{
+        text-align: center;
+      }
+      a{
+        display: block;
+        text-align: center;
+        &.view-all{
+          margin: 20px 0;
+        }
+      }
+
+    }
+  }
+}
+
+.p2pu-color-divider-wrap {
+  border-bottom: solid 6px $apricot;
+}
+
+.p2pu-color-divider-wrap::before, .p2pu-color-divider-wrap::after {
+  content: "";
+  height: 6px;
+  width: 25%;
+  position: absolute;
+  left: 25%;
+  background: $olive;
+}
+
+.p2pu-color-divider::before, .p2pu-color-divider::after {
+  content: "";
+  height: 6px;
+  width: 25%;
+  position: absolute;
+  left: 50%;
+  background: $cyan;
+}
+
+.p2pu-color-divider::after {
+  left: 75%;
+  background: $clemintine;
+}
+
+.pannel-tab {
+  background-image: url('../img/tab.png');
+  display: block;
+  padding: 10px 40px;
+  background-position: top center;
+  background-repeat: no-repeat;
+  float: left;
+  .p2pu-tab {
+    padding-right: 10px;
+    img {
+      width: 70px;
+      margin-top: -5px;
+      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+      filter: gray; /* IE6-9 */
+      -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+    }
+  }
+  &:hover {
+    cursor: pointer !important;
+    img {
+      filter: none;
+      -webkit-filter: grayscale(0%);
+    }
+  }
+}
+
+.masthead {
+  @extend .container;
+  .sign-in-panel {
+    margin-top: 50px;
+    @extend .clearfix;
+  }
+  .sign-in {
+    @include p2pu-btn($startColor: $snow, $endColor: $snow, $border: $silver);
+  }
+}
+
+.jumbotron {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  .main-feature {
+    font-family: '3dumbregular';
+    font-size: 50px;
+    font-weight: bolder;
+  }
+  .lead {
+    padding-bottom: 22px;
+    font-size: 21px;
+    font-weight: 200;
+    text-transform: uppercase;
+    color: gray;
+    line-height: 50px;
+    margin-left: 15px;
+    font-family: $baseFontFamily;
+  }
+  .p2pu-tour-btn {
+    @include p2pu-btn($startColor: $olive, $endColor: $olive, $border: $olive);
+    padding: 10px 23px;
+    color: $white;
+    font-size: 23px;
+    font-weight: bold;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+.actions {
+  @extend .clearfix;
+  margin: 50px 0;
+  li {
+    @include makeColumn($columns: 4);
+    margin-left: 5%;
+    margin-top: 30px;
+    a {
+      display: block;
+      font-family: 'Kite One', sans-serif;
+      &:hover {
+        text-decoration: none;
+        h2 {
+          color: $apricot;
+        }
+      }
+    }
+    img {
+      float: left;
+      margin-right: 20px;
+    }
+    p {
+      overflow: hidden;
+    }
+  }
+}
+.whole{
+  padding: 60px 0;
+  background-color: #ff7300;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  .container{
+    position: relative;
+    font-size: 60px;
+    color: white;
+    text-align: center;
+  }
+  .headline-icon{
+    font-size: 3em;
+    position: absolute;
+    right: 0;
+    top: -80px;
+    text-shadow: 1px 2px 3px $white;
+    color: $slate;
+  }
+}
+.billboard {
+  padding: 40px 20px;
+  margin-bottom: 40px;
+  @include box-shadow(0 0 0 1px #fff inset);
+  background: $white;
+  border-bottom: 1px solid #ddd;
+  zoom: 1;
+  //margin-top: 230px;
+  @extend .clearfix;
+  .img-large {
+    @extend .img-polaroid;
+    float: left;
+    margin-right: 20px;
+    width: 165px;
+    margin-top: 20px;
+  }
+  .controls {
+    a {
+
+      @extend .pull-right;
+      margin: 20px 10px;
+      i {
+        margin-left: 20px;
+      }
+    }
+  }
+  .thumbnail {
+    min-height: 445px;
+    position: relative;
+    .thumbnail-controls {
+      margin-top: 20px;
+      padding: 20px 0;
+      position: absolute;
+      bottom: 20px;
+    }
+  }
+  .blog-list{
+    li{
+      a{
+        font-weight: bold;
+        h3{
+          color: $cyan;
+        }
+        &:hover{
+          text-decoration: none;
+          h3{
+            color: $apricot;
+          }
+
+        }
+      }
+      .icon-chevron-right{
+        margin-left: 50px;
+      }
+    }
+  }
+  .schools{
+    .thumbnail-controls {
+      @extend .clearfix;
+      margin-bottom: 30px;
+      a{
+        @extend .pull-right;
+        padding-right: 30px;
+      }
+
+    }
+    .school {
+      border: 1px solid $silver;
+      @include border-radius(10px);
+      border-bottom: 1px solid #dbdcdf;
+      padding: 30px 76px 36px 262px;
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .school::before {
+      content: '';
+      position: absolute;
+      border-top: 19px solid #dbdcdf;
+      border-right: 19px solid transparent;
+      border-left: 19px solid transparent;
+      left: 90%;
+      bottom: -19px;
+      margin-left: -20px;
+    }
+    .school::after {
+      content: '';
+      position: absolute;
+      border-top: 18px solid #fff;
+      border-right: 18px solid transparent;
+      border-left: 18px solid transparent;
+      left: 90%;
+      bottom: -18px;
+      margin-left: -19px;
+    }
+    .school img {
+      position: absolute;
+      top: 50px;
+      left: 60px;
+      width: 70px;
+    }
+  }
+  .moocs{
+    .icon-cogs{
+      font-size: 20em;
+      float: left;
+      margin-right: 20px;
+    }
+  }
+  .description{
+    overflow: hidden;
+  }
+}
+
+ul.timeline-events {
+  margin: 0 auto;
+  padding: 0;
+  width: 7px;
+  height: 760px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background: #848689 url(../img/timeline-bg.jpg) no-repeat bottom center;
+  position: relative;
+}
+
+ul.timeline-events li {
+  background: #ffffff;
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  border: 5px solid #848689;
+  list-style: none;
+  margin-bottom: 107px;
+  margin-left: -12px;
+}
+
+#timeline .tooltip.blue {
+  background: #5bbcd5;
+  color: #fff;
+  font-size: 24px;
+  padding: 15px;
+}
+
+#timeline .tooltip {
+  opacity: 1;
+  background: #e8ebef;
+  color: #848689;
+  display: block;
+  padding: 15px 0 15px 0;
+  font-size: 18px;
+  font-family: 'Apercu Bold', Helvetica, sans-serif;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  position: absolute;
+}
