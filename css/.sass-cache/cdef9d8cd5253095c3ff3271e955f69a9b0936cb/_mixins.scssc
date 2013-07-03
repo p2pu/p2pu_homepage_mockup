@@ -1,7 +1,7 @@
 3.2.7 (Media Mark)
-8d76df47a22e6a4db579f15b0b621ba5111bb4bd
+56640cbca8e5b31a3e3b072185bb0c5c3750dd45
 o:Sass::Tree::RootNode
-:@template"\//
+:@template"\//
 // Mixins
 // --------------------------------------------------
 
@@ -576,7 +576,7 @@
 
 @mixin grid-core-span-x($gridColumns, $gridColumnWidth, $gridGutterWidth) {
   @while $gridColumns > 0 {
-    .span#{$gridColumns} { @include grid-core-span($gridColumns, $gridColumnWidth, $gridGutterWidth)}
+    .span#{$gridColumns} { @include grid-core-span($gridColumns, $gridColumnWidth, $gridGutterWidth);}
     $gridColumns: $gridColumns - 1;
   }
 }
