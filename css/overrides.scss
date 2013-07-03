@@ -44,7 +44,11 @@
     @include box-shadow(0 1px 2px rgba(0, 0, 0, 0.35));
   }
 }
-
+body{
+  background-image: url('../img/paper.png');
+  background-position: top left;
+  background-repeat: repeat;
+}
 h1, h2,h3, h4, h5{
   font-family: 'Arvo', serif;
 }
@@ -73,6 +77,13 @@ h1, h2,h3, h4, h5{
 }
 .p2pu-btn-clemintine {
   @include p2pu-btn($startColor: $clemintine, $endColor: $clemintine, $border: $clemintine);
+  color: $white;
+  &:hover {
+    color: $white;
+  }
+}
+.p2pu-btn-olive {
+  @include p2pu-btn($startColor: $olive, $endColor: $olive, $border: $olive);
   color: $white;
   &:hover {
     color: $white;
@@ -258,8 +269,9 @@ h1, h2,h3, h4, h5{
   }
 }
 .whole{
-  padding: 60px 0;
-  background-color: #ff7300;
+  padding: 40px 0;
+  background-image: url('../img/carbon_fibre_v2.png');
+  background-position: left top;
   width: 100%;
   position: absolute;
   left: 0;
@@ -275,7 +287,31 @@ h1, h2,h3, h4, h5{
     right: 0;
     top: -80px;
     text-shadow: 1px 2px 3px $white;
-    color: $slate;
+    color: $pewter;
+  }
+  &.appricot{
+    border-top: 3px solid $apricot;
+    border-bottom: 3px solid $apricot;
+  }
+  &.cyan{
+    border-top: 3px solid $cyan;
+    border-bottom: 3px solid $cyan;
+  }
+  &.olive{
+    border-top: 3px solid $olive;
+    border-bottom: 3px solid $olive;
+  }
+  &.clemintine{
+    border-top: 3px solid $clemintine;
+    border-bottom: 3px solid $clemintine;
+  }
+  &.silver{
+    border-top: 3px solid $silver;
+    border-bottom: 3px solid $silver;
+  }
+  &.white{
+    border-top: 3px solid $white;
+    border-bottom: 3px solid $white;
   }
 }
 .billboard {
@@ -285,7 +321,7 @@ h1, h2,h3, h4, h5{
   background: $white;
   border-bottom: 1px solid #ddd;
   zoom: 1;
-  //margin-top: 230px;
+  margin-top: 230px;
   @extend .clearfix;
   .img-large {
     @extend .img-polaroid;
@@ -313,6 +349,83 @@ h1, h2,h3, h4, h5{
       position: absolute;
       bottom: 20px;
     }
+  }
+  .we-are{
+    list-style-type: none;
+    margin-left: 0;
+    @extend .clearfix;
+    li{
+      margin: 20px;
+      position: relative;
+      text-align: center;
+      background: #fff;
+      padding: 10px;
+      width: 128px;
+      height: 160px;
+      border: 1px solid #aaa;
+      float: left;
+      cursor: pointer;
+      -webkit-border-radius: 4px;
+      -moz-border-radius: 4px;
+      -ms-border-radius: 4px;
+      -o-border-radius: 4px;
+      border-radius: 4px;
+      -webkit-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      -moz-box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      box-shadow: 0 1px 4px rgba(0,0,0,0.2);
+      &:first-child{
+        margin-left: 0;
+      }
+      img{
+        width: 128px;
+        height: 128px;
+      }
+      .caption{
+        padding-top: 20px;
+        text-align: left;
+      }
+    }
+  }
+  .badges-carousel{
+    padding: 0px;
+    position: relative;
+    height: 450px;
+    list-style: none;
+    margin-left: -20px;
+    li{
+      position: absolute;
+      opacity: 1;
+      z-index: 280;
+      left: 10%;
+      top:20%;
+      z-index: 8;
+      opacity: 0.6;
+    }
+    li + li{
+      left: 25%;
+      top:10%;
+      z-index: 9;
+      opacity: 0.8;
+      &+li{
+        left:40%;
+        top:0;
+        z-index: 10;
+        opacity: 1;
+        &+li{
+          left:55%;
+          top:10%;
+          z-index: 9;
+          opacity: 0.8;
+          &+li{
+          left:70%;
+          top:20%;
+          z-index: 8;
+          opacity: 0.6;
+        }
+        }
+      }
+    }
+
   }
   .blog-list{
     li{
