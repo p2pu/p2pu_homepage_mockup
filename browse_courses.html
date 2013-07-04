@@ -25,10 +25,10 @@
                     <a href="http://www.facebook.com/P2PUniversity" target="_blank">Facebook
                         <i class="icon-facebook-sign"></i>
                     </a>
-                <hr>
+                    <hr>
                 <li>
-                <a href="http://twitter.com/p2pu" target="_blank">Twitter
-                    <i class="icon-twitter-sign"></i></a></li>
+                    <a href="http://twitter.com/p2pu" target="_blank">Twitter
+                        <i class="icon-twitter-sign"></i></a></li>
                 <hr>
                 <li><a href="http://info.p2pu.org/get-involved/" target="_blank">Get Involved</a></li>
                 <hr>
@@ -48,7 +48,8 @@
         <div class="supporters">
             <h4>Some of Our Supporters</h4>
             <a href="http://www.hewlett.org/" target="_blank"><img class="supporter-image"
-                                                                   src="https://p2pu.org/static/images/footer-hewlett.png" height="64"
+                                                                   src="https://p2pu.org/static/images/footer-hewlett.png"
+                                                                   height="64"
                                                                    width="353"
                                                                    alt="William and Flora Hewlett Foundation"></a>
             <a href="http://www.shuttleworthfoundation.org/" target="_blank"><img class="supporter-image"
@@ -72,78 +73,228 @@
     </div>
     <div class="sign-in-panel clearfix">
         <a class="btn sign-in pull-right dropdown-toggle" data-toggle="dropdown" href="#">Sign In <span
-                class="caret"></span></a></div>
+                class="caret"></span>
+        </a>
+
+        <div class="dropdown-menu allow-click">
+            <section>
+                <article>
+                    <h1>Sign In
+                        <small>or <a href="" tabindex="7">create an account</a></small>
+                    </h1>
+                    <fieldset>
+                        <div class="field">
+                            <label>Username or Email</label>
+                            <input class="muted" type="text" name="username" tabindex="1">
+
+                        </div>
+                        <div class="field">
+                            <label>Password
+                                <small class="hint">(<a href="" tabindex="6">Forgot your password?</a>)
+                                </small>
+                            </label>
+                            <input class="muted" maxlength="255" type="password" name="password" tabindex="2">
+
+                        </div>
+                        <div class="field inline_label">
+                            <label for="id_remember_me">
+                                <input id="id_remember_me" type="checkbox" name="remember_me" tabindex="3">
+
+                                Remember Me
+                            </label>
+                        </div>
+                        <p class="submit">
+                            <button id="login-submit-button" class="btn btn-olive" type="submit" tabindex="4">Sign
+                                In
+                            </button>
+                            <a class="btn" href="" tabindex="5">Cancel</a>
+
+                            or use
+                            <a class="openid" href="" tabindex="5">OpenID</a>
+                        </p>
+                        </form>
+                    </fieldset>
+                </article>
+            </section>
+        </div>
+    </div>
 </div>
 </div>
 <div class="container">
-    <div class="cl">
-        <ul class="timeline-events">
-            <li class="active">
+    <div class="jumbotron">
+        <h1>How it <span class="text-appricot">works?</span></h1>
 
-            </li>
-        </ul>
+        <p class="lead">
+            Check it out, poke around, ask anything, ...
+        </p>
     </div>
-    <div class="cl">
+    <div class="timeline">
         <ul class="timeline-events">
             <li class="active">
-                <div id="t-tooltip-1" class="tooltip blue left">Get a Learndot</div>
-            </li>
-            <li class="">
-                <div id="t-tooltip-2" class="tooltip right">
-                    <div class="tooltip-title">
-                        <p>Launch internal training course using existing content</p>
+                <div class="popover top">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Sign in</h3>
+
+                    <div class="popover-content">
+                        <p>The first step is to register</p>
                     </div>
-                    <div class="tooltip-content">
-                        <img src="http://www.learndot.com/wp-content/uploads/2012/10/people.png" class="tooltip-icon"
-                             alt="People">
-
-                        <p>Notice a <strong>50% reduction in time-to-productivity</strong> for new employees</p></div>
                 </div>
             </li>
-        </ul>
-    </div>
-    <div class="cl">
-        <ul class="timeline-events">
-            <li class="active">
-                <div id="t-tooltip-1" class="tooltip blue left">Get a Learndot</div>
-            </li>
-            <li class="">
-                <div id="t-tooltip-2" class="tooltip right">
-                    <div class="tooltip-title">
-                        <p>Launch internal training course using existing content</p>
+            <li>
+                <div class="popover left">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Find courses</h3>
+
+                    <div class="popover-content">
+                        <p>Search trough many courses</p>
                     </div>
-                    <div class="tooltip-content">
-                        <img src="http://www.learndot.com/wp-content/uploads/2012/10/people.png" class="tooltip-icon"
-                             alt="People">
+                </div>
+            </li>
+            <li>
+                <div class="popover right">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Learn new stuff</h3>
 
-                        <p>Notice a <strong>50% reduction in time-to-productivity</strong> for new employees</p></div>
+                    <div class="popover-content">
+                        <p>Learn new stuff</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="popover left">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Give a course</h3>
+
+                    <div class="popover-content">
+                        <p>Tell everyone about what you know</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="popover right">
+                    <div class="arrow"></div>
+                    <h3 class="popover-title">Give a course</h3>
+
+                    <div class="popover-content">
+                        <p>Tell everyone about what you know</p>
+                    </div>
                 </div>
             </li>
         </ul>
+        <div class="text-align-center">
+            <a class="p2pu-btn-olive" href="http://thepeople.p2pu.org">Learn, discus, socialize ...</a>
+        </div>
     </div>
 
+    <hr>
+    <div class="power-users">
+        <h2>Learn from: </h2>
+        <ul class="thumbnails">
+            <li>
+                <div class="thumbnail clearfix">
+                    <img class="img-polaroid pull-left power-user-img" data-src="holder.js/120x120" alt="120x120"
+                         style="width: 120px; height: 120px;"
+                         src="data:image/png;base64,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">
 
-    <ul class="thumbnails">
-        <li class="span4">
-            <div class="thumbnail">
-                <img data-src="holder.js/300x200" alt="300x200" style="width: 300px; height: 200px;"
-                     src="data:image/png;base64,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">
+                    <div class="caption">
+                        <h3>Pipi Longsocks</h3>
 
-                <div class="caption">
-                    <h3>Thumbnail label</h3>
+                        <p>This is a person who is so modest we like to call her "pipi". She has thought
+                            many p2pu-ers about stuff she knows, stuff she does not know and mainly how to find out
+                            about stuff you don't know.
+                        </p>
 
-                    <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida
-                        at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
-
-                    <p><a href="#" class="btn btn-primary">Action</a> <a href="#" class="btn">Action</a></p>
+                        <h4>These are the courses she gave:</h4>
+                        <ul class="unstyled user-courses clearfix">
+                            <li>
+                                <a href="https://p2pu.org/en/courses/546/seguridad-informatica/" class="">
+                                    <img class="img-polaroid"
+                                         src="https://p2pu.org/media/uploads/images/979578_10201441939435945_1729856686_n_1.jpg"
+                                         alt="London"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://p2pu.org/en/courses/473/gameon-video-game-design-development-level-1/"
+                                   class="">
+                                    <img class="img-polaroid"
+                                         src="https://p2pu.org/media/uploads/images/VGD_Badge-Level1.png"
+                                         alt="London"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://p2pu.org/en/groups/badge-system-design/" class="">
+                                    <img class="img-polaroid"
+                                         src="https://p2pu.org/media/images/projects/3/c1c304568aac00d7893d721c5975356d.jpg"
+                                         alt="London"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </li>
-    </ul>
+            </li>
+            <li>
+                <div class="thumbnail clearfix">
+                    <img class="img-polaroid pull-left power-user-img" data-src="holder.js/120x120" alt="120x120"
+                         style="width: 120px; height: 120px;"
+                         src="data:image/png;base64,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">
 
+                    <div class="caption">
+                        <h3>Joana Doe</h3>
 
+                        <p>This is a person who is so awesome we like to call her "her awesomnes". She has thought
+                            many p2pu-ers about stuff she knows, stuff she does not know and mainly how to find out
+                            about stuff you don't know.
+                        </p>
+
+                        <h4>These are the courses she gave:</h4>
+                        <ul class="unstyled user-courses">
+                            <li>
+                                <a href="https://p2pu.org/en/courses/552/living-in-london/" class="">
+                                    <img class="img-polaroid"
+                                         src="https://p2pu.org/media/uploads/images/63950-640x360-london-icons2-640.jpg"
+                                         alt="London"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://p2pu.org/en/courses/515/selflove/" class="">
+                                    <img class="img-polaroid"
+                                         src="https://p2pu.org/media/uploads/images/Love_self.jpg"
+                                         alt="London"/>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://p2pu.org/en/groups/environmental-citizen-science/" class="">
+                                    <img class="img-polaroid"
+                                         src="https://p2pu.org/media/images/projects/2/8d5e957f297893487bd98fa830fa6413.jpg"
+                                         alt="London"/>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <a class="p2pu-btn-apricot" href="https://p2pu.org/en/courses/create/">
+            Give your own Course
+            <i class="icon-chevron-sign-right"></i>
+        </a>
+    </div>
+
+    <hr>
+    <div class="footer">
+        <img class="pull-right" src="https://p2pu.org/static/images/cc-icons.png" alt=""/>
+    </div>
 </div>
+</div>
+</div>
+<!-- /container -->
+
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
 <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script>
+    $(".p2pu-tab").click(function () {
+        $(".p2pu-panel-wrap").slideToggle("slow");
+    });
+</script>
 </body>
-</html>
+< /html>

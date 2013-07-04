@@ -25,10 +25,10 @@
                     <a href="http://www.facebook.com/P2PUniversity" target="_blank">Facebook
                         <i class="icon-facebook-sign"></i>
                     </a>
-                <hr>
+                    <hr>
                 <li>
-                <a href="http://twitter.com/p2pu" target="_blank">Twitter
-                    <i class="icon-twitter-sign"></i></a></li>
+                    <a href="http://twitter.com/p2pu" target="_blank">Twitter
+                        <i class="icon-twitter-sign"></i></a></li>
                 <hr>
                 <li><a href="http://info.p2pu.org/get-involved/" target="_blank">Get Involved</a></li>
                 <hr>
@@ -48,7 +48,8 @@
         <div class="supporters">
             <h4>Some of Our Supporters</h4>
             <a href="http://www.hewlett.org/" target="_blank"><img class="supporter-image"
-                                                                   src="https://p2pu.org/static/images/footer-hewlett.png" height="64"
+                                                                   src="https://p2pu.org/static/images/footer-hewlett.png"
+                                                                   height="64"
                                                                    width="353"
                                                                    alt="William and Flora Hewlett Foundation"></a>
             <a href="http://www.shuttleworthfoundation.org/" target="_blank"><img class="supporter-image"
@@ -72,24 +73,83 @@
     </div>
     <div class="sign-in-panel clearfix">
         <a class="btn sign-in pull-right dropdown-toggle" data-toggle="dropdown" href="#">Sign In <span
-                class="caret"></span></a></div>
+                class="caret"></span>
+        </a>
+
+        <div class="dropdown-menu allow-click">
+            <section>
+                <article>
+                    <h1>Sign In
+                        <small>or <a href="/en/register/?next=/en/" tabindex="7">create an account</a></small>
+                    </h1>
+                    <fieldset>
+                        <div class="field">
+                            <label>Username or Email</label>
+                            <input class="muted" type="text" name="username" tabindex="1">
+
+                        </div>
+                        <div class="field">
+                            <label>Password
+                                <small class="hint">(<a href="" tabindex="6">Forgot your password?</a>)
+                                </small>
+                            </label>
+                            <input class="muted" maxlength="255" type="password" name="password" tabindex="2">
+
+                        </div>
+                        <div class="field inline_label">
+                            <label for="id_remember_me">
+                                <input id="id_remember_me" type="checkbox" name="remember_me" tabindex="3">
+
+                                Remember Me
+                            </label>
+                        </div>
+                        <p class="submit">
+                            <button id="login-submit-button" class="btn btn-olive" type="submit" tabindex="4">Sign
+                                In
+                            </button>
+                            <a class="btn" href="" tabindex="5">Cancel</a>
+
+                            or use
+                            <a class="openid" href="" tabindex="5">OpenID</a>
+                        </p>
+                        </form>
+                    </fieldset>
+                </article>
+            </section>
+        </div>
+    </div>
 </div>
 </div>
 
 <div class="container">
 <!-- Jumbotron -->
 <div class="jumbotron">
-    <h1 class="main-feature">Because <span class="text-appricot">learning with others</span>
+    <h1 class="main-feature"><span class="text-appricot">Learning with others</span>
         is more
-        <span class="text-cyan">fun!</span></h1>
+        <span class="text-cyan">FUN!</span></h1>
 
     <p class="lead">
         Meet new people, Get new skills, have lots of fun and do it all for free!
     </p>
-    <a class="p2pu-tour-btn" href="browse_courses.html">Take a tour</a>
+
+    <div class="do-something">
+        <div class="do-something-wrap">
+            <div class="search-course">
+                <div class="input-prepend">
+                    <span class="add-on">Learn about</span>
+                    <input class="input-xlarge" id="prependedInput" type="text">
+                    <i class="icon-search"></i>
+                </div>
+            </div>
+            <span class="choose-span">or</span>
+            <a class="p2pu-btn-olive p2pu-tour-btn" href="browse_courses.html">Take a tour</a>
+        </div>
+    </div>
+
 </div>
 
 <hr>
+<h2>Find here:</h2>
 <ul class="actions unstyled">
     <li>
         <a href="#community">
@@ -183,7 +243,8 @@
             </div>
         </li>
         <li>
-            <img src="https://secure.gravatar.com/avatar/811ae8f5dbf33ff104ce648294c99790?s=240&amp;d=https%3A%2F%2Fp2pu.org%2Fstatic%2Fimages%2Fmember-missing.png&amp;r=g" alt=""/>
+            <img src="https://secure.gravatar.com/avatar/811ae8f5dbf33ff104ce648294c99790?s=240&amp;d=https%3A%2F%2Fp2pu.org%2Fstatic%2Fimages%2Fmember-missing.png&amp;r=g"
+                 alt=""/>
 
             <div class="caption">
                 <a href="#">Leah</a>
@@ -286,7 +347,7 @@
 
 </div>
 
-<div class="whole clemintine"  id="badges">
+<div class="whole clemintine" id="badges">
     <div class="container">Get feedback for a project <i class="icon-gift   headline-icon"></i></div>
 </div>
 
@@ -296,20 +357,25 @@
     placerat. Nunc vitae neque eget lacus volutpat congue vel sed ipsum.
     <hr>
     <ul id="badges-carousel" class="badges-carousel" style="">
-      <li class="roundabout-moveable-item roundabout-in-focus" style="">
-          <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210" src="http://badges.p2pu.org/en/badge/view/8/embedded/?rendering=normal"> </iframe>
-      </li>
-      <li class="roundabout-moveable-item">
-          <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210" src="http://badges.p2pu.org/en/badge/view/27/embedded/?rendering=normal"> </iframe>
-      </li>
-      <li class="roundabout-moveable-item">
-          <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210" src="http://badges.p2pu.org/en/badge/view/22/embedded/?rendering=normal"> </iframe>
-      </li>
-        <li class="roundabout-moveable-item">
-          <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210" src="http://badges.p2pu.org/en/badge/view/36/embedded/?rendering=normal"> </iframe>
+        <li class="roundabout-moveable-item roundabout-in-focus" style="">
+            <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210"
+                    src="http://badges.p2pu.org/en/badge/view/8/embedded/?rendering=normal"></iframe>
         </li>
         <li class="roundabout-moveable-item">
-          <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210" src="http://badges.p2pu.org/en/badge/view/47/embedded/?rendering=normal"> </iframe>
+            <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210"
+                    src="http://badges.p2pu.org/en/badge/view/27/embedded/?rendering=normal"></iframe>
+        </li>
+        <li class="roundabout-moveable-item">
+            <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210"
+                    src="http://badges.p2pu.org/en/badge/view/22/embedded/?rendering=normal"></iframe>
+        </li>
+        <li class="roundabout-moveable-item">
+            <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210"
+                    src="http://badges.p2pu.org/en/badge/view/36/embedded/?rendering=normal"></iframe>
+        </li>
+        <li class="roundabout-moveable-item">
+            <iframe id="badge_embed" type="text/html" frameborder="0" height="310" width="210"
+                    src="http://badges.p2pu.org/en/badge/view/47/embedded/?rendering=normal"></iframe>
         </li>
     </ul>
     <div class="controls">
@@ -407,10 +473,11 @@
     <ul class="unstyled blog-list">
         <li>
             <a href="http://info.p2pu.org/2013/06/26/latest-news-from-p2pu/">
-            <h3>
-                Latest News from P2PU… <i class="icon-chevron-right"></i>
-            </h3>
+                <h3>
+                    Latest News from P2PU… <i class="icon-chevron-right"></i>
+                </h3>
             </a>
+
             <div class="caption">
                 Welcome to this month’s roundup of everything that has happened in the P2PUniverse.
                 We’ve stripped down our newsletter so that we can cram more info in for you. We hope you like it…
@@ -419,12 +486,13 @@
         </li>
         <li>
             <a href="http://info.p2pu.org/2013/06/25/building-a-toolkit-for-open-educators/">
-            <h3>
-                Building a toolkit for open educators <i class="icon-chevron-right"></i>
-            </h3>
+                <h3>
+                    Building a toolkit for open educators <i class="icon-chevron-right"></i>
+                </h3>
             </a>
+
             <div class="caption">
-               At the start of this year we sketched out a rough tech roadmap.
+                At the start of this year we sketched out a rough tech roadmap.
                 Now is a good time to report on some of the work we’ve done since then,
                 and our plans for the rest of the year....
             </div>
@@ -432,10 +500,11 @@
         </li>
         <li>
             <a href="http://info.p2pu.org/2013/06/18/data-mooc-results-findings-and-recommendations/">
-            <h3>
-                Data MOOC: Results, Findings and Recommendations <i class="icon-chevron-right"></i>
-            </h3>
+                <h3>
+                    Data MOOC: Results, Findings and Recommendations <i class="icon-chevron-right"></i>
+                </h3>
             </a>
+
             <div class="caption">
                 From mid-April to mid-May, we collaborated with our friends at the Open Knowledge Foundation to
                 launch the “Data Explorer Mission” using the Mechanical MOOC platform.
@@ -443,12 +512,14 @@
                 educational resources.
             </div>
             <hr>
-        </li><li>
+        </li>
+        <li>
             <a href="http://info.p2pu.org/2013/06/26/latest-news-from-p2pu/">
-            <h3>
-                Introducing Marvin <i class="icon-chevron-right"></i>
-            </h3>
+                <h3>
+                    Introducing Marvin <i class="icon-chevron-right"></i>
+                </h3>
             </a>
+
             <div class="caption">
                 At the start of the year we spent some time on behind the scenes work. We had a long overdue
                 software upgrade that we needed to perform on our main server.
@@ -460,12 +531,13 @@
 
     </ul>
 </div>
-<div class="whole white" id="moocs">
+<div class="whole purple" id="moocs">
     <div class="container">The Mechanical MOOC Presents... </i></div>
 </div>
 <div class="billboard">
     <div class="moocs">
         <i class="icon-cogs"></i>
+
         <div class="description">
             <h2>A Gentle Introduction to Python</h2>
 
@@ -503,6 +575,7 @@
         </div>
     </div>
 </div>
+<hr>
 <div class="footer">
     <img class="pull-right" src="https://p2pu.org/static/images/cc-icons.png" alt=""/>
 </div>
@@ -514,7 +587,7 @@
 <script src="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
 <script>
     $(".p2pu-tab").click(function () {
-      $(".p2pu-panel-wrap").slideToggle("slow");
+        $(".p2pu-panel-wrap").slideToggle("slow");
     });
 </script>
 </body>
