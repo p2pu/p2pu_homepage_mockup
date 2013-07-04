@@ -6134,7 +6134,8 @@ h1, h2, h3, h4, h5 {
     padding: 25px;
     top: 40px;
     right: 0;
-    left: auto; }
+    left: auto;
+    z-index: 3000; }
 .masthead .sign-in {
   color: #515665;
   background-color: #fcfcfc;
@@ -6444,7 +6445,7 @@ h1, h2, h3, h4, h5 {
   border-radius: 5px;
   background: #848689 url(../img/timeline-bg.jpg) no-repeat bottom center;
   position: relative;
-  margin-top: 160px; }
+  margin-top: 50px; }
 
 .timeline-events li {
   background: white;
