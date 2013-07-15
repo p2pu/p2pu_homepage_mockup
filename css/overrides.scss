@@ -45,9 +45,9 @@
   }
 }
 body{
-  background-image: url('../img/paper.png');
+  /*background-image: url('../img/paper.png');
   background-position: top left;
-  background-repeat: repeat;
+  background-repeat: repeat;*/
 }
 h1, h2,h3, h4, h5{
   font-family: 'Arvo', serif;
@@ -102,6 +102,40 @@ h1, h2,h3, h4, h5{
 
 .text-cyan {
   color: $cyan;
+}
+
+.navbar {
+  .brand {
+    display: block;
+    width: 80px;
+    height: 24px;
+    background: url('../img/logo-p2pu-menu.png') no-repeat;
+    padding: 0;
+    margin: 17px 0;
+    text-indent: -9999px;
+    overflow: hidden;
+  }
+
+  .nav{
+    margin: 9px 10px 0 20px;
+    font-family: 'Arvo', sans-serif;
+    li{
+      a{
+        text-shadow: none !important;
+        font-size: 1.1em;
+
+        &:hover, &:focus{
+          color: #777;
+          background-color: transparent;
+        }
+
+        &.p2pu-tab{
+          font-size: 1.6em;
+          border-left: 1px solid $silver;
+        }
+      }
+    }
+  }
 }
 
 .p2pu-panel-wrap {
@@ -175,65 +209,31 @@ h1, h2,h3, h4, h5{
   background: $clemintine;
 }
 
-.pannel-tab {
-  background-image: url('../img/tab.png');
-  display: block;
-  padding: 10px 40px;
-  background-position: top center;
-  background-repeat: no-repeat;
-  float: left;
-  .p2pu-tab {
-    padding-right: 10px;
-    img {
-      width: 70px;
-      margin-top: -5px;
-      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
-      filter: gray; /* IE6-9 */
-      -webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
-    }
-  }
-  &:hover {
-    cursor: pointer !important;
-    img {
-      filter: none;
-      -webkit-filter: grayscale(0%);
-    }
-  }
-}
-
-.masthead {
-  @extend .container;
-  .sign-in-panel {
-    margin-top: 50px;
-    @extend .clearfix;
-    position: relative;
-    .allow-click{
-      padding: 25px;
-      top: 40px;
-      right: 0;
-      left: auto;
-      z-index: 3000;
-    }
-  }
-  .sign-in {
-    @include p2pu-btn($startColor: $snow, $endColor: $snow, $border: $silver);
-  }
-}
-
+/********/
 .jumbotron {
-  margin-top: 50px;
+  margin-top: 65px;
   margin-bottom: 50px;
-  .main-feature {
-    font-family: '3dumbregular';
-    font-size: 50px;
-    font-weight: bolder;
+  text-align: center;
+  position: relative;
+  background-image: url('../img/photo-145kkm_color.jpg');
+  background-size: cover;
+  background-position: 50% 30%;
+  text-align: center;
+  height: 334px;
+  margin-bottom: -60px;
+  z-index: -1;
+  font-size: 21px;
+  line-height: 1.3em;
+  text-shadow: 0 0 12px rgba(0,0,0,0.5),0 0 32px rgba(0,0,0,0.25),0 1px rgba(0,0,0,0.75);
+  .main-feature{
+    color: $white;
   }
   .lead {
+    color: $white;
     padding-bottom: 22px;
     font-size: 21px;
     font-weight: 200;
     text-transform: uppercase;
-    color: gray;
     line-height: 50px;
     margin-left: 15px;
     font-family: $baseFontFamily;
@@ -241,45 +241,8 @@ h1, h2,h3, h4, h5{
 
   .do-something{
     height: 60px;
-    .do-something-wrap{
-      margin: 15px;
-      position: relative;
-    }
-    .search-course{
-      background: $white;
-      padding: 10px;
-      float: left;
-      -webkit-border-radius: 4px;
-      -moz-border-radius: 4px;
-      -ms-border-radius: 4px;
-      -o-border-radius: 4px;
-      border-radius: 4px;
-      -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-      -moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
-      .input-prepend{
-        position: relative;
-      }
-      .icon-search{
-        position: absolute;
-        font-size: 22px;
-        opacity: 0.5;
-        right: 10px;
-        top: 3px;
-        z-index: 3;
-        input{
-          padding-lef: 50px;
-        }
-      }
-    }
-    .choose-span{
-      font-size: 3em;
-      margin: 0 30px;
-      line-height: 50px;
-    }
+    text-align: left;
     .p2pu-tour-btn {
-      position: absolute;
-      top: 0;
       padding: 17px 25px;
       &:hover {
         text-decoration: none;
@@ -291,6 +254,8 @@ h1, h2,h3, h4, h5{
 .actions {
   @extend .clearfix;
   margin: 0 0 50px 0;
+  background-color: #f3f4f8;
+  @include border-radius(15px);
   li {
     @include makeColumn($columns: 4);
     margin-left: 5%;
