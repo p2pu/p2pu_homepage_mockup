@@ -6126,7 +6126,6 @@ h1, h2, h3, h4, h5 {
   text-align: center;
   height: 334px;
   margin-bottom: -60px;
-  z-index: -1;
   font-size: 21px;
   line-height: 1.3em;
   text-shadow: 0 0 12px rgba(0, 0, 0, 0.5), 0 0 32px rgba(0, 0, 0, 0.25), 0 1px rgba(0, 0, 0, 0.75); }
@@ -6152,6 +6151,7 @@ h1, h2, h3, h4, h5 {
 .actions {
   margin: 0 0 50px 0;
   background-color: #f3f4f8;
+  position: relative;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
   border-radius: 15px; }
