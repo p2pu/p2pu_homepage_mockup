@@ -5,23 +5,6 @@
 // Mixins already created for P2PU
 @import "p2pu-css-framework/p2pu/p2pu-mixins";
 
-// Import new fonts
-@font-face {
-  font-family: '3dumbregular';
-  src: url('fonts/3dumb-webfont.eot');
-  src: url('fonts/3dumb-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/3dumb-webfont.woff') format('woff'), url('fonts/3dumb-webfont.ttf') format('truetype'), url('fonts/3dumb-webfont.svg#3dumbregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: '2dumbregular';
-  src: url('fonts/2dumb-webfont.eot');
-  src: url('fonts/2dumb-webfont.eot?#iefix') format('embedded-opentype'), url('fonts/2dumb-webfont.woff') format('woff'), url('fonts/2dumb-webfont.ttf') format('truetype'), url('fonts/2dumb-webfont.svg#2dumbregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
 @import url(http://fonts.googleapis.com/css?family=Kite+One);
 @import url(http://fonts.googleapis.com/css?family=Arvo:400,700,400italic,700italic);
 
@@ -45,16 +28,18 @@
   }
 }
 body{
-  /*background-image: url('../img/paper.png');
-  background-position: top left;
-  background-repeat: repeat;*/
+  font-family: $altFontFamily;
+  background-image: url('../img/bgtexture.png');
 }
 h1, h2,h3, h4, h5{
   font-family: 'Arvo', serif;
 }
+.top-offset-span{
+  margin-top: -67px;
+  display: block;
+}
 .p2pu-btn {
   @include p2pu-btn($startColor: $snow, $endColor: $snow, $border: $silver);
-  //font-weight: bold;
   &:hover {
     color: $slate;
   }
@@ -211,13 +196,13 @@ h1, h2,h3, h4, h5{
 
 /********/
 .jumbotron {
-  margin-top: 65px;
+  padding-top: 65px;
   margin-bottom: 50px;
   text-align: center;
   position: relative;
   background-image: url('../img/photo-learn_one.jpg');
   background-size: cover;
-  background-position: 50% 55%;
+  background-position: 50% 40%;
   text-align: center;
   height: 334px;
   margin-bottom: -60px;
@@ -265,11 +250,10 @@ h1, h2,h3, h4, h5{
   @include border-radius(15px);
   li {
     @include makeColumn($columns: 4);
-    //margin-left: 5%;
+    margin-left: 5%;
     margin-top: 30px;
     a {
       display: block;
-      font-family: 'Kite One', sans-serif;
       &:hover {
         text-decoration: none;
         h2 {
@@ -286,18 +270,29 @@ h1, h2,h3, h4, h5{
     }
   }
 }
-.whole{
-  padding: 40px 0;
-  background-image: url('../img/mochaGrunge.png');
+.section-divider{
+  background-image: url('../img/bgsection.jpg');
+  background-size: cover;
   background-position: left top;
   width: 100%;
   position: absolute;
   left: 0;
   .container{
     position: relative;
-    font-size: 60px;
-    color: white;
+    font-size: 2.8em;
+    text-shadow: 0 1px $white;
     text-align: center;
+    font-family: $baseFontFamily;
+    line-height: 80px;
+  }
+  .back-to-top-link{
+    font-size: 12px;
+    &:hover{
+      text-decoration: none;
+    }
+    i{
+      margin-left: 5px;
+    }
   }
   .headline-icon{
     font-size: 3em;
@@ -308,32 +303,32 @@ h1, h2,h3, h4, h5{
     color: $pewter;
   }
   &.appricot{
-    border-top: 3px solid $apricot;
-    border-bottom: 3px solid $apricot;
+    border-top: 1px solid $apricot;
+    border-bottom: 1px solid $apricot;
   }
   &.cyan{
-    border-top: 3px solid $cyan;
-    border-bottom: 3px solid $cyan;
+    border-top: 1px solid $cyan;
+    border-bottom: 1px solid $cyan;
   }
   &.olive{
-    border-top: 3px solid $olive;
-    border-bottom: 3px solid $olive;
+    border-top: 1px solid $olive;
+    border-bottom: 1px solid $olive;
   }
   &.clemintine{
-    border-top: 3px solid $clemintine;
-    border-bottom: 3px solid $clemintine;
+    border-top: 1px solid $clemintine;
+    border-bottom: 1px solid $clemintine;
   }
   &.silver{
-    border-top: 3px solid $silver;
-    border-bottom: 3px solid $silver;
+    border-top: 1px solid $silver;
+    border-bottom: 1px solid $silver;
   }
   &.white{
-    border-top: 3px solid $white;
-    border-bottom: 3px solid $white;
+    border-top: 1px solid $white;
+    border-bottom: 1px solid $white;
   }
   &.purple{
-    border-top: 3px solid $purple;
-    border-bottom: 3px solid $purple;
+    border-top: 1px solid $purple;
+    border-bottom: 1px solid $purple;
   }
 }
 .billboard {
@@ -343,7 +338,7 @@ h1, h2,h3, h4, h5{
   background: $white;
   border-bottom: 1px solid #ddd;
   zoom: 1;
-  margin-top: 230px;
+  margin-top: 180px;
   @extend .clearfix;
   @include border-radius(15px);
   &.top{
@@ -381,13 +376,13 @@ h1, h2,h3, h4, h5{
     margin-left: 0;
     @extend .clearfix;
     li{
-      margin: 20px;
+      margin: 10px;
       position: relative;
       text-align: center;
       background: #fff;
       padding: 10px;
-      width: 128px;
-      height: 160px;
+      width: 68px;
+      height: 80px;
       border: 1px solid #aaa;
       float: left;
       cursor: pointer;
@@ -403,11 +398,10 @@ h1, h2,h3, h4, h5{
         margin-left: 0;
       }
       img{
-        width: 128px;
-        height: 128px;
+        width: 68px;
+        height: 68px;
       }
       .caption{
-        padding-top: 20px;
         text-align: left;
       }
     }
