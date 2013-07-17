@@ -1,7 +1,7 @@
 3.2.7 (Media Mark)
-6707995770825c9cc68ca5b1dacf2ab339238fe7
+d93d5042cc732f57b593f8e5a2388ebda1602b48
 o:Sass::Tree::RootNode
-:@template"0// Bootstrap
+:@template"0// Bootstrap
 @import "p2pu-css-framework/lib/bootstrap";
 // Bootstrap Responsive
 @import "p2pu-css-framework/lib/responsive";
@@ -218,9 +218,9 @@ h1, h2,h3, h4, h5{
   margin-bottom: 50px;
   text-align: center;
   position: relative;
-  background-image: url('../img/photo-145kkm_color.jpg');
+  background-image: url('../img/photo-learn_one.jpg');
   background-size: cover;
-  background-position: 50% 30%;
+  background-position: 50% 55%;
   text-align: center;
   height: 334px;
   margin-bottom: -60px;
@@ -935,10 +935,10 @@ after;iÏ;:0;;E;<0;iÏ;@;	T;i ;
 [ ;;;o;;@;;;"	50pxo;;["text-align;iØ;@;i ;
 [ ;;;o;;@;;;"centero;;["position;iÙ;@;i ;
 [ ;;;o;;@;;;"relativeo;;["background-image;iÚ;@;i ;
-[ ;;;o;;[o;	;iÚ;@;;;""../img/photo-145kkm_color.jpg;"url;iÚ;@;{ ;0o;;["background-size;iÛ;@;i ;
+[ ;;;o;;[o;	;iÚ;@;;;"../img/photo-learn_one.jpg;"url;iÚ;@;{ ;0o;;["background-size;iÛ;@;i ;
 [ ;;;o;;@;;;"
 covero;;["background-position;iÜ;@;i ;
-[ ;;;o;;@;;;"50% 30%o;;["text-align;iÝ;@;i ;
+[ ;;;o;;@;;;"50% 55%o;;["text-align;iÝ;@;i ;
 [ ;;;o;;@;;;"centero;;["height;iÞ;@;i ;
 [ ;;;o;;@;;;"
 334pxo;;["margin-bottom;iß;@;i ;
