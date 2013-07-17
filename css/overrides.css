@@ -6147,10 +6147,14 @@ h1, h2, h3, h4, h5 {
   .jumbotron .do-something {
     height: 60px;
     text-align: left; }
-    .jumbotron .do-something .p2pu-tour-btn {
-      padding: 17px 25px; }
-      .jumbotron .do-something .p2pu-tour-btn:hover {
-        text-decoration: none; }
+
+.p2pu-tour-btn {
+  padding: 17px 25px; }
+  .p2pu-tour-btn:hover {
+    text-decoration: none; }
+
+.call-to-action {
+  text-align: center; }
 
 .actions {
   margin: 0 0 50px 0;
@@ -6228,7 +6232,12 @@ h1, h2, h3, h4, h5 {
   background: white;
   border-bottom: 1px solid #ddd;
   zoom: 1;
-  margin-top: 230px; }
+  margin-top: 230px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  border-radius: 15px; }
+  .billboard.top {
+    margin-top: 0; }
   .billboard .img-large {
     float: left;
     margin-right: 20px;
