@@ -6137,9 +6137,10 @@ h1, h2, h3, h4, h5 {
     height: 60px;
     text-align: left; }
 
-.p2pu-tour-btn {
-  padding: 17px 25px; }
-  .p2pu-tour-btn:hover {
+.p2pu-tour {
+  padding: 17px 25px;
+  font-weight: bold; }
+  .p2pu-tour:hover {
     text-decoration: none; }
 
 .call-to-action {
