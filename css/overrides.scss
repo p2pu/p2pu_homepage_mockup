@@ -347,7 +347,7 @@ section{
     .featured-items-item-wrap{
       @extend .thumbnail;
       background-color: $snow;
-      min-height: 340px;
+      min-height: 290px;
       padding: 10px 10px 40px 10px;
     }
     .featured-items-img{
@@ -433,8 +433,8 @@ section{
     li{
       img{
         @extend .img-polaroid;
-        width: 70px;
-        height: 70px;
+        width: 100px;
+        height: 100px;
         float: left;
         margin-right: 20px;
         margin-top: 11px;

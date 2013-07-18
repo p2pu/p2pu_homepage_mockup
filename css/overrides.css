@@ -6214,7 +6214,7 @@ section {
     margin-left: 30px; }
   .billboard .featured-items-wrap .featured-items-item-wrap {
     background-color: #fcfcfc;
-    min-height: 340px;
+    min-height: 290px;
     padding: 10px 10px 40px 10px; }
   .billboard .featured-items-wrap .featured-items-img {
     width: 200px;
@@ -6275,8 +6275,8 @@ section {
   .billboard .blog-list {
     margin-left: -30px; }
     .billboard .blog-list li img {
-      width: 70px;
-      height: 70px;
+      width: 100px;
+      height: 100px;
       float: left;
       margin-right: 20px;
       margin-top: 11px; }
