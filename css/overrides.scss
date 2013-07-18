@@ -34,6 +34,9 @@ body{
 h1, h2,h3, h4, h5{
   font-family: 'Arvo', serif;
 }
+.overflow-hidden{
+  overflow: hidden;
+}
 .top-offset-span{
   margin-top: -67px;
   display: block;
@@ -426,12 +429,22 @@ section{
     }
   }
   .blog-list{
+    margin-left: -30px;
     li{
+      img{
+        @extend .img-polaroid;
+        width: 70px;
+        height: 70px;
+        float: left;
+        margin-right: 20px;
+        margin-top: 11px;
+      }
+      h4{
+        color: $cyan;
+        height: 45px;
+      }
       a{
         font-weight: bold;
-        h3{
-          color: $cyan;
-        }
         &:hover{
           text-decoration: none;
           h3{
@@ -442,6 +455,9 @@ section{
       }
       .icon-chevron-right{
         margin-left: 50px;
+      }
+      .caption{
+        height: 90px;
       }
     }
   }

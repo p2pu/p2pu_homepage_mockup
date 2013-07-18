@@ -227,7 +227,7 @@ a:hover {
   -moz-border-radius: 6px;
   border-radius: 6px; }
 
-.img-polaroid, .billboard .img-large {
+.img-polaroid, .billboard .img-large, .billboard .blog-list li img {
   padding: 4px;
   background-color: #fff;
   border: 1px solid #ccc;
@@ -5801,6 +5801,9 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Arvo', serif; }
 
+.overflow-hidden {
+  overflow: hidden; }
+
 .top-offset-span {
   margin-top: -67px;
   display: block; }
@@ -6269,16 +6272,27 @@ section {
         height: 68px; }
       .billboard .we-are li .caption {
         text-align: left; }
-  .billboard .blog-list li a {
-    font-weight: bold; }
-    .billboard .blog-list li a h3 {
-      color: #05c6b4; }
-    .billboard .blog-list li a:hover {
-      text-decoration: none; }
-      .billboard .blog-list li a:hover h3 {
-        color: #ff7300; }
-  .billboard .blog-list li .icon-chevron-right {
-    margin-left: 50px; }
+  .billboard .blog-list {
+    margin-left: -30px; }
+    .billboard .blog-list li img {
+      width: 70px;
+      height: 70px;
+      float: left;
+      margin-right: 20px;
+      margin-top: 11px; }
+    .billboard .blog-list li h4 {
+      color: #05c6b4;
+      height: 45px; }
+    .billboard .blog-list li a {
+      font-weight: bold; }
+      .billboard .blog-list li a:hover {
+        text-decoration: none; }
+        .billboard .blog-list li a:hover h3 {
+          color: #ff7300; }
+    .billboard .blog-list li .icon-chevron-right {
+      margin-left: 50px; }
+    .billboard .blog-list li .caption {
+      height: 90px; }
   .billboard .moocs .icon-cogs {
     font-size: 20em;
     float: left;
