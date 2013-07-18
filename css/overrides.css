@@ -476,12 +476,10 @@ a:hover {
 .row-fluid [class*="span"].hide {
   display: none; }
 
-[class*="span"].pull-right, .billboard .controls a[class*="span"], .billboard .schools .thumbnail-controls a[class*="span"],
+[class*="span"].pull-right, .billboard .controls a[class*="span"],
 .row-fluid [class*="span"].pull-right,
 .row-fluid .billboard .controls a[class*="span"],
-.billboard .controls .row-fluid a[class*="span"],
-.row-fluid .billboard .schools .thumbnail-controls a[class*="span"],
-.billboard .schools .thumbnail-controls .row-fluid a[class*="span"] {
+.billboard .controls .row-fluid a[class*="span"] {
   float: right; }
 
 .container, .p2pu-panel-wrap .panel-contents {
@@ -2257,7 +2255,7 @@ table th[class*="span"],
   -webkit-background-clip: padding-box;
   -moz-background-clip: padding;
   background-clip: padding-box; }
-  .dropdown-menu.pull-right, .billboard .controls a.dropdown-menu, .billboard .schools .thumbnail-controls a.dropdown-menu {
+  .dropdown-menu.pull-right, .billboard .controls a.dropdown-menu {
     right: 0;
     left: auto; }
   .dropdown-menu .divider {
@@ -2321,7 +2319,7 @@ table th[class*="span"],
   .open > .dropdown-menu {
     display: block; }
 
-.pull-right > .dropdown-menu, .billboard .controls a > .dropdown-menu, .billboard .schools .thumbnail-controls a > .dropdown-menu {
+.pull-right > .dropdown-menu, .billboard .controls a > .dropdown-menu {
   right: 0;
   left: auto; }
 
@@ -3064,7 +3062,7 @@ input[type="submit"].btn {
 .nav > li > a > img {
   max-width: none; }
 
-.nav > .pull-right, .billboard .controls .nav > a, .billboard .schools .thumbnail-controls .nav > a {
+.nav > .pull-right, .billboard .controls .nav > a {
   float: right; }
 
 .nav-header {
@@ -3556,7 +3554,7 @@ input[type="submit"].btn {
   float: left;
   margin: 0 10px 0 0; }
 
-.navbar .nav.pull-right, .navbar .billboard .controls a.nav, .billboard .controls .navbar a.nav, .navbar .billboard .schools .thumbnail-controls a.nav, .billboard .schools .thumbnail-controls .navbar a.nav {
+.navbar .nav.pull-right, .navbar .billboard .controls a.nav, .billboard .controls .navbar a.nav {
   float: right;
   margin-right: 0; }
 
@@ -3687,36 +3685,28 @@ input[type="submit"].btn {
   border-top-color: #656c7e;
   border-bottom-color: #656c7e; }
 
-.navbar .pull-right > li > .dropdown-menu, .navbar .billboard .controls a > li > .dropdown-menu, .billboard .controls .navbar a > li > .dropdown-menu, .navbar .billboard .schools .thumbnail-controls a > li > .dropdown-menu, .billboard .schools .thumbnail-controls .navbar a > li > .dropdown-menu,
+.navbar .pull-right > li > .dropdown-menu, .navbar .billboard .controls a > li > .dropdown-menu, .billboard .controls .navbar a > li > .dropdown-menu,
 .navbar .nav > li > .dropdown-menu.pull-right,
 .navbar .billboard .controls .nav > li > a.dropdown-menu,
-.billboard .controls .navbar .nav > li > a.dropdown-menu,
-.navbar .billboard .schools .thumbnail-controls .nav > li > a.dropdown-menu,
-.billboard .schools .thumbnail-controls .navbar .nav > li > a.dropdown-menu {
+.billboard .controls .navbar .nav > li > a.dropdown-menu {
   left: auto;
   right: 0; }
-  .navbar .pull-right > li > .dropdown-menu:before, .navbar .billboard .controls a > li > .dropdown-menu:before, .billboard .controls .navbar a > li > .dropdown-menu:before, .navbar .billboard .schools .thumbnail-controls a > li > .dropdown-menu:before, .billboard .schools .thumbnail-controls .navbar a > li > .dropdown-menu:before,
+  .navbar .pull-right > li > .dropdown-menu:before, .navbar .billboard .controls a > li > .dropdown-menu:before, .billboard .controls .navbar a > li > .dropdown-menu:before,
   .navbar .nav > li > .dropdown-menu.pull-right:before,
   .navbar .billboard .controls .nav > li > a.dropdown-menu:before,
-  .billboard .controls .navbar .nav > li > a.dropdown-menu:before,
-  .navbar .billboard .schools .thumbnail-controls .nav > li > a.dropdown-menu:before,
-  .billboard .schools .thumbnail-controls .navbar .nav > li > a.dropdown-menu:before {
+  .billboard .controls .navbar .nav > li > a.dropdown-menu:before {
     left: auto;
     right: 12px; }
-  .navbar .pull-right > li > .dropdown-menu:after, .navbar .billboard .controls a > li > .dropdown-menu:after, .billboard .controls .navbar a > li > .dropdown-menu:after, .navbar .billboard .schools .thumbnail-controls a > li > .dropdown-menu:after, .billboard .schools .thumbnail-controls .navbar a > li > .dropdown-menu:after,
+  .navbar .pull-right > li > .dropdown-menu:after, .navbar .billboard .controls a > li > .dropdown-menu:after, .billboard .controls .navbar a > li > .dropdown-menu:after,
   .navbar .nav > li > .dropdown-menu.pull-right:after,
   .navbar .billboard .controls .nav > li > a.dropdown-menu:after,
-  .billboard .controls .navbar .nav > li > a.dropdown-menu:after,
-  .navbar .billboard .schools .thumbnail-controls .nav > li > a.dropdown-menu:after,
-  .billboard .schools .thumbnail-controls .navbar .nav > li > a.dropdown-menu:after {
+  .billboard .controls .navbar .nav > li > a.dropdown-menu:after {
     left: auto;
     right: 13px; }
-  .navbar .pull-right > li > .dropdown-menu .dropdown-menu, .navbar .billboard .controls a > li > .dropdown-menu .dropdown-menu, .billboard .controls .navbar a > li > .dropdown-menu .dropdown-menu, .navbar .billboard .schools .thumbnail-controls a > li > .dropdown-menu .dropdown-menu, .billboard .schools .thumbnail-controls .navbar a > li > .dropdown-menu .dropdown-menu,
+  .navbar .pull-right > li > .dropdown-menu .dropdown-menu, .navbar .billboard .controls a > li > .dropdown-menu .dropdown-menu, .billboard .controls .navbar a > li > .dropdown-menu .dropdown-menu,
   .navbar .nav > li > .dropdown-menu.pull-right .dropdown-menu,
   .navbar .billboard .controls .nav > li > a.dropdown-menu .dropdown-menu,
-  .billboard .controls .navbar .nav > li > a.dropdown-menu .dropdown-menu,
-  .navbar .billboard .schools .thumbnail-controls .nav > li > a.dropdown-menu .dropdown-menu,
-  .billboard .schools .thumbnail-controls .navbar .nav > li > a.dropdown-menu .dropdown-menu {
+  .billboard .controls .navbar .nav > li > a.dropdown-menu .dropdown-menu {
     left: auto;
     right: 100%;
     margin-left: 0;
@@ -4283,26 +4273,26 @@ input[type="submit"].btn {
     border-left-color: white;
     bottom: -10px; }
 
-.thumbnails {
+.thumbnails, .billboard .featured-items-wrap .featured-items-list {
   margin-left: -20px;
   list-style: none;
   *zoom: 1; }
-  .thumbnails:before, .thumbnails:after {
+  .thumbnails:before, .billboard .featured-items-wrap .featured-items-list:before, .thumbnails:after, .billboard .featured-items-wrap .featured-items-list:after {
     display: table;
     content: "";
     line-height: 0; }
-  .thumbnails:after {
+  .thumbnails:after, .billboard .featured-items-wrap .featured-items-list:after {
     clear: both; }
 
-.row-fluid .thumbnails {
+.row-fluid .thumbnails, .row-fluid .billboard .featured-items-wrap .featured-items-list, .billboard .featured-items-wrap .row-fluid .featured-items-list {
   margin-left: 0; }
 
-.thumbnails > li {
+.thumbnails > li, .billboard .featured-items-wrap .featured-items-list > li {
   float: left;
   margin-bottom: 22px;
   margin-left: 20px; }
 
-.thumbnail {
+.thumbnail, .billboard .featured-items-wrap .featured-items-item-wrap {
   display: block;
   padding: 4px;
   line-height: 22px;
@@ -4318,19 +4308,19 @@ input[type="submit"].btn {
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
-a.thumbnail:hover {
+a.thumbnail:hover, .billboard .featured-items-wrap a.featured-items-item-wrap:hover {
   border-color: #05c6b4;
   -webkit-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   -moz-box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25);
   box-shadow: 0 1px 4px rgba(0, 105, 214, 0.25); }
 
-.thumbnail > img {
+.thumbnail > img, .billboard .featured-items-wrap .featured-items-item-wrap > img {
   display: block;
   max-width: 100%;
   margin-left: auto;
   margin-right: auto; }
 
-.thumbnail .caption {
+.thumbnail .caption, .billboard .featured-items-wrap .featured-items-item-wrap .caption {
   padding: 9px;
   color: #656c7e; }
 
@@ -4356,7 +4346,7 @@ a.thumbnail:hover {
 .media .pull-left {
   margin-right: 10px; }
 
-.media .pull-right, .media .billboard .controls a, .billboard .controls .media a, .media .billboard .schools .thumbnail-controls a, .billboard .schools .thumbnail-controls .media a {
+.media .pull-right, .media .billboard .controls a, .billboard .controls .media a {
   margin-left: 10px; }
 
 .media-list {
@@ -4778,7 +4768,7 @@ a.label:hover, a.badge:hover {
   .hero-unit li {
     line-height: 33px; }
 
-.pull-right, .billboard .controls a, .billboard .schools .thumbnail-controls a {
+.pull-right, .billboard .controls a {
   float: right; }
 
 .pull-left {
@@ -4796,13 +4786,13 @@ a.label:hover, a.badge:hover {
 .affix {
   position: fixed; }
 
-.clearfix, .actions, .billboard, .billboard .we-are, .billboard .schools .thumbnail-controls {
+.clearfix, .actions, .section-title-wrap, .billboard, .billboard .we-are {
   *zoom: 1; }
-  .clearfix:before, .actions:before, .billboard:before, .billboard .we-are:before, .billboard .schools .thumbnail-controls:before, .clearfix:after, .actions:after, .billboard:after, .billboard .we-are:after, .billboard .schools .thumbnail-controls:after {
+  .clearfix:before, .actions:before, .section-title-wrap:before, .billboard:before, .billboard .we-are:before, .clearfix:after, .actions:after, .section-title-wrap:after, .billboard:after, .billboard .we-are:after {
     display: table;
     content: "";
     line-height: 0; }
-  .clearfix:after, .actions:after, .billboard:after, .billboard .we-are:after, .billboard .schools .thumbnail-controls:after {
+  .clearfix:after, .actions:after, .section-title-wrap:after, .billboard:after, .billboard .we-are:after {
     clear: both; }
 
 .hide-text {
@@ -4844,13 +4834,13 @@ label {
 @-ms-viewport {
   width: device-width; }
 
-.clearfix, .actions, .billboard, .billboard .we-are, .billboard .schools .thumbnail-controls {
+.clearfix, .actions, .section-title-wrap, .billboard, .billboard .we-are {
   *zoom: 1; }
-  .clearfix:before, .actions:before, .billboard:before, .billboard .we-are:before, .billboard .schools .thumbnail-controls:before, .clearfix:after, .actions:after, .billboard:after, .billboard .we-are:after, .billboard .schools .thumbnail-controls:after {
+  .clearfix:before, .actions:before, .section-title-wrap:before, .billboard:before, .billboard .we-are:before, .clearfix:after, .actions:after, .section-title-wrap:after, .billboard:after, .billboard .we-are:after {
     display: table;
     content: "";
     line-height: 0; }
-  .clearfix:after, .actions:after, .billboard:after, .billboard .we-are:after, .billboard .schools .thumbnail-controls:after {
+  .clearfix:after, .actions:after, .section-title-wrap:after, .billboard:after, .billboard .we-are:after {
     clear: both; }
 
 .hide-text {
@@ -5208,13 +5198,13 @@ label {
   .uneditable-input.span1 {
     width: 56px; }
 
-  .thumbnails {
+  .thumbnails, .billboard .featured-items-wrap .featured-items-list {
     margin-left: -30px; }
 
-  .thumbnails > li {
+  .thumbnails > li, .billboard .featured-items-wrap .featured-items-list > li {
     margin-left: 30px; }
 
-  .row-fluid .thumbnails {
+  .row-fluid .thumbnails, .row-fluid .billboard .featured-items-wrap .featured-items-list, .billboard .featured-items-wrap .row-fluid .featured-items-list {
     margin-left: 0; } }
 @media (min-width: 768px) and (max-width: 979px) {
   .row {
@@ -5544,10 +5534,11 @@ label {
     width: 100%; }
 
   .row,
-  .thumbnails {
+  .thumbnails,
+  .billboard .featured-items-wrap .featured-items-list {
     margin-left: 0; }
 
-  .thumbnails > li {
+  .thumbnails > li, .billboard .featured-items-wrap .featured-items-list > li {
     float: none;
     margin-left: 0; }
 
@@ -5635,9 +5626,7 @@ label {
   .media .pull-left,
   .media .pull-right,
   .media .billboard .controls a,
-  .billboard .controls .media a,
-  .media .billboard .schools .thumbnail-controls a,
-  .billboard .schools .thumbnail-controls .media a {
+  .billboard .controls .media a {
     float: none;
     display: block;
     margin-bottom: 10px; }
@@ -5786,7 +5775,7 @@ label {
     border-top-color: #111111;
     border-bottom-color: #111111; }
 
-  .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .billboard .controls a.nav, .billboard .controls .navbar .nav-collapse a.nav, .navbar .nav-collapse .billboard .schools .thumbnail-controls a.nav, .billboard .schools .thumbnail-controls .navbar .nav-collapse a.nav {
+  .navbar .nav-collapse .nav.pull-right, .navbar .nav-collapse .billboard .controls a.nav, .billboard .controls .navbar .nav-collapse a.nav {
     float: none;
     margin-left: 0; }
 
@@ -5848,6 +5837,14 @@ h1, h2, h3, h4, h5 {
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.35); }
   .p2pu-btn:hover {
     color: #515665; }
+
+.p2pu-btn-mini {
+  padding: 5px 15px !important;
+  font-size: 1em !important; }
+
+.p2pu-btn-large {
+  padding: 10px 25px !important;
+  font-size: 25px !important; }
 
 .p2pu-btn-cyan {
   color: #515665;
@@ -6138,17 +6135,19 @@ h1, h2, h3, h4, h5 {
     text-align: left; }
 
 .p2pu-tour {
-  padding: 17px 25px;
+  padding: 17px 25px 17px 0;
   font-weight: bold; }
   .p2pu-tour:hover {
     text-decoration: none; }
 
 .call-to-action {
-  text-align: center; }
+  margin: 0 20px;
+  font-weight: bold;
+  color: white; }
 
 .actions {
   margin: 0 0 10px 0;
-  background-color: #f3f4f8;
+  background-color: white;
   position: relative;
   -webkit-border-radius: 15px;
   -moz-border-radius: 15px;
@@ -6171,68 +6170,31 @@ h1, h2, h3, h4, h5 {
     .actions li p {
       overflow: hidden; }
 
-.section-divider {
-  background-image: url("../img/bgsection.jpg");
-  background-size: cover;
-  background-position: left top;
-  width: 100%;
-  position: absolute;
-  left: 0; }
-  .section-divider .container, .section-divider .p2pu-panel-wrap .panel-contents, .p2pu-panel-wrap .section-divider .panel-contents {
-    position: relative;
-    font-size: 2.8em;
-    text-shadow: 0 1px white;
-    text-align: center;
-    font-family: "arvo", Helvetica, sans-serif;
-    line-height: 80px; }
-  .section-divider .back-to-top-link {
-    font-size: 12px; }
-    .section-divider .back-to-top-link:hover {
-      text-decoration: none; }
-    .section-divider .back-to-top-link i {
-      margin-left: 5px; }
-  .section-divider .headline-icon {
-    font-size: 3em;
-    position: absolute;
-    right: 0;
-    top: -80px;
-    text-shadow: 1px 2px 3px white;
-    color: #8e95a8; }
-  .section-divider.appricot {
-    border-top: 1px solid #ff7300;
-    border-bottom: 1px solid #ff7300; }
-  .section-divider.cyan {
-    border-top: 1px solid #05c6b4;
-    border-bottom: 1px solid #05c6b4; }
-  .section-divider.olive {
-    border-top: 1px solid #b7d500;
-    border-bottom: 1px solid #b7d500; }
-  .section-divider.clemintine {
-    border-top: 1px solid #ffbc1a;
-    border-bottom: 1px solid #ffbc1a; }
-  .section-divider.silver {
-    border-top: 1px solid #cccccc;
-    border-bottom: 1px solid #cccccc; }
-  .section-divider.white {
-    border-top: 1px solid white;
-    border-bottom: 1px solid white; }
-  .section-divider.purple {
-    border-top: 1px solid #7a43b6;
-    border-bottom: 1px solid #7a43b6; }
+section {
+  border-top: 1px solid #d8dbde;
+  box-shadow: inset 0 5px 5px -3px rgba(0, 0, 0, 0.1);
+  background: #f3f4f8;
+  background: url("../img/bgtexture.png"), -moz-linear-gradient(top, #f3f4f8 0%, white 100%);
+  background: url("../img/bgtexture.png"), -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f3f4f8), color-stop(100%, white));
+  background: url("../img/bgtexture.png"), -webkit-linear-gradient(top, #f3f4f8 0%, white 100%);
+  background: url("../img/bgtexture.png"), -o-linear-gradient(top, #f3f4f8 0%, white 100%);
+  background: url("../img/bgtexture.png"), -ms-linear-gradient(top, #f3f4f8 0%, white 100%);
+  background: url("../img/bgtexture.png"), linear-gradient(to bottom, #f3f4f8 0%, white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$cloud', endColorstr='$white',GradientType=0 ); }
+
+.section-title-wrap .section-title {
+  float: left;
+  margin-top: 30px; }
+.section-title-wrap a {
+  line-height: 44px;
+  margin-top: 5px; }
+  .section-title-wrap a:hover {
+    text-decoration: none; }
 
 .billboard {
-  padding: 40px 20px;
+  padding: 20px 0;
   margin-bottom: 40px;
-  -webkit-box-shadow: 0 0 0 1px white inset;
-  -moz-box-shadow: 0 0 0 1px white inset;
-  box-shadow: 0 0 0 1px white inset;
-  background: white;
-  border-bottom: 1px solid #ddd;
-  zoom: 1;
-  margin-top: 180px;
-  -webkit-border-radius: 15px;
-  -moz-border-radius: 15px;
-  border-radius: 15px; }
+  zoom: 1; }
   .billboard.top {
     margin-top: 0; }
   .billboard .img-large {
@@ -6244,14 +6206,40 @@ h1, h2, h3, h4, h5 {
     margin: 20px 10px; }
     .billboard .controls a i {
       margin-left: 20px; }
-  .billboard .thumbnail {
-    min-height: 445px;
-    position: relative; }
-    .billboard .thumbnail .thumbnail-controls {
-      margin-top: 20px;
-      padding: 20px 0;
-      position: absolute;
-      bottom: 20px; }
+  .billboard .featured-items-wrap .featured-items-item {
+    position: relative;
+    margin-left: 30px; }
+  .billboard .featured-items-wrap .featured-items-item-wrap {
+    background-color: #fcfcfc;
+    min-height: 340px;
+    padding: 10px 10px 40px 10px; }
+  .billboard .featured-items-wrap .featured-items-img {
+    width: 200px;
+    height: 150px; }
+  .billboard .featured-items-wrap .featured-items-item-controls {
+    position: absolute;
+    bottom: 15px; }
+  .billboard .courses .section-caption {
+    margin-left: 0; }
+    .billboard .courses .section-caption a {
+      float: left;
+      margin: 20px 10px 20px 0; }
+  .billboard .badges .featured-items-img {
+    width: auto;
+    height: auto; }
+  .billboard .schools .featured-items-item-wrap > img,
+  .billboard .schools .featured-items-img {
+    width: auto;
+    height: auto;
+    float: left;
+    margin-right: 15px;
+    margin-top: 10px; }
+  .billboard .schools .featured-items-item-caption {
+    overflow: hidden; }
+  .billboard .schools .featured-items-item-controls {
+    right: 15px; }
+  .billboard .schools .featured-items-item-wrap {
+    min-height: 250px; }
   .billboard .we-are {
     list-style-type: none;
     margin-left: 0; }
@@ -6281,42 +6269,6 @@ h1, h2, h3, h4, h5 {
         height: 68px; }
       .billboard .we-are li .caption {
         text-align: left; }
-  .billboard .badges-carousel {
-    padding: 0px;
-    position: relative;
-    height: 450px;
-    list-style: none;
-    margin-left: -20px; }
-    .billboard .badges-carousel li {
-      position: absolute;
-      opacity: 1;
-      z-index: 280;
-      left: 10%;
-      top: 20%;
-      z-index: 8;
-      opacity: 0.6; }
-      .billboard .badges-carousel li:hover {
-        opacity: 1; }
-    .billboard .badges-carousel li + li {
-      left: 25%;
-      top: 10%;
-      z-index: 9;
-      opacity: 0.8; }
-      .billboard .badges-carousel li + li + li {
-        left: 40%;
-        top: 0;
-        z-index: 10;
-        opacity: 1; }
-        .billboard .badges-carousel li + li + li + li {
-          left: 55%;
-          top: 10%;
-          z-index: 9;
-          opacity: 0.8; }
-          .billboard .badges-carousel li + li + li + li + li {
-            left: 70%;
-            top: 20%;
-            z-index: 8;
-            opacity: 0.6; }
   .billboard .blog-list li a {
     font-weight: bold; }
     .billboard .blog-list li a h3 {
@@ -6327,42 +6279,6 @@ h1, h2, h3, h4, h5 {
         color: #ff7300; }
   .billboard .blog-list li .icon-chevron-right {
     margin-left: 50px; }
-  .billboard .schools .thumbnail-controls {
-    margin-bottom: 30px; }
-    .billboard .schools .thumbnail-controls a {
-      padding-right: 30px; }
-  .billboard .schools .school {
-    border: 1px solid #cccccc;
-    -webkit-border-radius: 10px;
-    -moz-border-radius: 10px;
-    border-radius: 10px;
-    border-bottom: 1px solid #dbdcdf;
-    padding: 30px 76px 36px 262px;
-    position: relative;
-    margin-bottom: 20px; }
-  .billboard .schools .school::before {
-    content: '';
-    position: absolute;
-    border-top: 19px solid #dbdcdf;
-    border-right: 19px solid transparent;
-    border-left: 19px solid transparent;
-    left: 90%;
-    bottom: -19px;
-    margin-left: -20px; }
-  .billboard .schools .school::after {
-    content: '';
-    position: absolute;
-    border-top: 18px solid #fff;
-    border-right: 18px solid transparent;
-    border-left: 18px solid transparent;
-    left: 90%;
-    bottom: -18px;
-    margin-left: -19px; }
-  .billboard .schools .school img {
-    position: absolute;
-    top: 50px;
-    left: 60px;
-    width: 70px; }
   .billboard .moocs .icon-cogs {
     font-size: 20em;
     float: left;
@@ -6422,7 +6338,7 @@ h1, h2, h3, h4, h5 {
     .timeline-events li .popover.right {
       left: 30px; }
 
-.power-users .thumbnail {
+.power-users .thumbnail, .power-users .billboard .featured-items-wrap .featured-items-item-wrap, .billboard .featured-items-wrap .power-users .featured-items-item-wrap {
   background-color: white;
   padding-left: 20px; }
 .power-users .power-user-img {

@@ -45,6 +45,15 @@ h1, h2,h3, h4, h5{
   }
 }
 
+.p2pu-btn-mini{
+  padding: 5px 15px !important;
+  font-size: 1em !important;
+}
+
+.p2pu-btn-large{
+  padding: 10px 25px !important;
+  font-size: 25px !important;
+}
 .p2pu-btn-cyan {
   @include p2pu-btn($startColor: $cyan, $endColor: $cyan, $border: $cyan);
   color: $white;
@@ -234,19 +243,21 @@ h1, h2,h3, h4, h5{
   }
 }
 .p2pu-tour {
-  padding: 17px 25px;
+  padding: 17px 25px 17px 0;
   font-weight: bold;
   &:hover {
     text-decoration: none;
   }
 }
 .call-to-action{
-  text-align: center;
+  margin: 0 20px;
+  font-weight: bold;
+  color: $white;
 }
 .actions {
   @extend .clearfix;
   margin: 0 0 10px 0;
-  background-color: #f3f4f8;
+  background-color: $white;
   position: relative;
   @include border-radius(15px);
   li {
@@ -271,77 +282,37 @@ h1, h2,h3, h4, h5{
     }
   }
 }
-.section-divider{
-  background-image: url('../img/bgsection.jpg');
-  background-size: cover;
-  background-position: left top;
-  width: 100%;
-  position: absolute;
-  left: 0;
-  .container{
-    position: relative;
-    font-size: 2.8em;
-    text-shadow: 0 1px $white;
-    text-align: center;
-    font-family: $baseFontFamily;
-    line-height: 80px;
+section{
+  border-top: 1px solid #d8dbde;
+  box-shadow: inset 0 5px 5px -3px rgba(0,0,0,0.1);
+  background: $cloud;
+  background: url('../img/bgtexture.png'),-moz-linear-gradient(top, $cloud 0%, $white 100%);
+  background: url('../img/bgtexture.png'),-webkit-gradient(linear, left top, left bottom, color-stop(0%,$cloud), color-stop(100%,$white));
+  background: url('../img/bgtexture.png'),-webkit-linear-gradient(top, $cloud 0%,$white 100%);
+  background: url('../img/bgtexture.png'),-o-linear-gradient(top, $cloud 0%,$white 100%);
+  background: url('../img/bgtexture.png'),-ms-linear-gradient(top, $cloud 0%,$white 100%);
+  background: url('../img/bgtexture.png'),linear-gradient(to bottom, $cloud 0%,$white 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$cloud', endColorstr='$white',GradientType=0 );
+}
+.section-title-wrap{
+  @extend .clearfix;
+  .section-title{
+    float: left;
+    margin-top: 30px;
   }
-  .back-to-top-link{
-    font-size: 12px;
+  a{
+    line-height: 44px;
+    margin-top: 5px;
     &:hover{
       text-decoration: none;
     }
-    i{
-      margin-left: 5px;
-    }
-  }
-  .headline-icon{
-    font-size: 3em;
-    position: absolute;
-    right: 0;
-    top: -80px;
-    text-shadow: 1px 2px 3px $white;
-    color: $pewter;
-  }
-  &.appricot{
-    border-top: 1px solid $apricot;
-    border-bottom: 1px solid $apricot;
-  }
-  &.cyan{
-    border-top: 1px solid $cyan;
-    border-bottom: 1px solid $cyan;
-  }
-  &.olive{
-    border-top: 1px solid $olive;
-    border-bottom: 1px solid $olive;
-  }
-  &.clemintine{
-    border-top: 1px solid $clemintine;
-    border-bottom: 1px solid $clemintine;
-  }
-  &.silver{
-    border-top: 1px solid $silver;
-    border-bottom: 1px solid $silver;
-  }
-  &.white{
-    border-top: 1px solid $white;
-    border-bottom: 1px solid $white;
-  }
-  &.purple{
-    border-top: 1px solid $purple;
-    border-bottom: 1px solid $purple;
   }
 }
 .billboard {
-  padding: 40px 20px;
+  padding: 20px 0;
   margin-bottom: 40px;
-  @include box-shadow(0 0 0 1px #fff inset);
-  background: $white;
-  border-bottom: 1px solid #ddd;
   zoom: 1;
-  margin-top: 180px;
   @extend .clearfix;
-  @include border-radius(15px);
   &.top{
     margin-top: 0;
   }
@@ -362,14 +333,61 @@ h1, h2,h3, h4, h5{
       }
     }
   }
-  .thumbnail {
-    min-height: 445px;
-    position: relative;
-    .thumbnail-controls {
-      margin-top: 20px;
-      padding: 20px 0;
+  .featured-items-wrap{
+    .featured-items-list{
+      @extend .thumbnails;
+    }
+    .featured-items-item{
+      position: relative;
+      margin-left: 30px;
+    }
+    .featured-items-item-wrap{
+      @extend .thumbnail;
+      background-color: $snow;
+      min-height: 340px;
+      padding: 10px 10px 40px 10px;
+    }
+    .featured-items-img{
+      width: 200px;
+      height: 150px;
+    }
+    .featured-items-item-controls{
       position: absolute;
-      bottom: 20px;
+      bottom: 15px;
+    }
+  }
+  .courses{
+    .section-caption{
+      margin-left: 0;
+      a{
+        float: left;
+        margin: 20px 10px 20px 0;
+      }
+    }
+  }
+  .badges{
+    .featured-items-img{
+      width: auto;
+      height: auto;
+    }
+  }
+  .schools{
+    .featured-items-item-wrap > img,
+    .featured-items-img{
+      width: auto;
+      height: auto;
+      float: left;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+    .featured-items-item-caption{
+      overflow: hidden;
+    }
+    .featured-items-item-controls{
+      right: 15px;
+    }
+    .featured-items-item-wrap{
+      min-height: 250px;
     }
   }
   .we-are{
@@ -407,50 +425,6 @@ h1, h2,h3, h4, h5{
       }
     }
   }
-  .badges-carousel{
-    padding: 0px;
-    position: relative;
-    height: 450px;
-    list-style: none;
-    margin-left: -20px;
-    li{
-      position: absolute;
-      opacity: 1;
-      z-index: 280;
-      left: 10%;
-      top:20%;
-      z-index: 8;
-      opacity: 0.6;
-      &:hover{
-        opacity: 1;
-      }
-    }
-    li + li{
-      left: 25%;
-      top:10%;
-      z-index: 9;
-      opacity: 0.8;
-      &+li{
-        left:40%;
-        top:0;
-        z-index: 10;
-        opacity: 1;
-        &+li{
-          left:55%;
-          top:10%;
-          z-index: 9;
-          opacity: 0.8;
-          &+li{
-          left:70%;
-          top:20%;
-          z-index: 8;
-          opacity: 0.6;
-        }
-        }
-      }
-    }
-
-  }
   .blog-list{
     li{
       a{
@@ -469,51 +443,6 @@ h1, h2,h3, h4, h5{
       .icon-chevron-right{
         margin-left: 50px;
       }
-    }
-  }
-  .schools{
-    .thumbnail-controls {
-      @extend .clearfix;
-      margin-bottom: 30px;
-      a{
-        @extend .pull-right;
-        padding-right: 30px;
-      }
-
-    }
-    .school {
-      border: 1px solid $silver;
-      @include border-radius(10px);
-      border-bottom: 1px solid #dbdcdf;
-      padding: 30px 76px 36px 262px;
-      position: relative;
-      margin-bottom: 20px;
-    }
-    .school::before {
-      content: '';
-      position: absolute;
-      border-top: 19px solid #dbdcdf;
-      border-right: 19px solid transparent;
-      border-left: 19px solid transparent;
-      left: 90%;
-      bottom: -19px;
-      margin-left: -20px;
-    }
-    .school::after {
-      content: '';
-      position: absolute;
-      border-top: 18px solid #fff;
-      border-right: 18px solid transparent;
-      border-left: 18px solid transparent;
-      left: 90%;
-      bottom: -18px;
-      margin-left: -19px;
-    }
-    .school img {
-      position: absolute;
-      top: 50px;
-      left: 60px;
-      width: 70px;
     }
   }
   .moocs{
